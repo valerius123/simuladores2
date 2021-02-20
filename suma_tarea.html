@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Sumar dos Numeros JavaScript</title>
+    </head>
+    <body>
+    <fieldset>
+        <legend>Ingrese dos numeros te lo ordena Rafael Barcelata</legend>
+        <label for="">Numero 1:</label>
+        <input type="text" id="txtN1">
+        <br><br>
+        <label for="">Numero 2:</label>
+        <input type="text" id="txtN2">
+        <br><br>
+        <input type="button" onclick="Sumar();" value="Sumar">
+<input type="button" onclick="Restar();" value="Restar">
+<input type="button" onclick="Multiplicar();" value="Multiplicar">
+<input type="button" onclick="Dividir();" value="Dividir">
+    </fieldset>
+    </body>
+    <script>
+        function Sumar() {
+            var n1 = document.getElementById('txtN1').value;
+            var n2 = document.getElementById('txtN2').value;
+            var suma = parseInt(n1) + parseInt(n2);
+            alert("La suma es: "+suma)
+        }
+    </script>
+<script>
+        function Restar() {
+            var n1 = document.getElementById('txtN1').value;
+            var n2 = document.getElementById('txtN2').value;
+            var resta = parseInt(n1) - parseInt(n2);
+            alert("La resta es: "+resta)
+        }
+    </script>
+<script>
+        function Multiplicar() {
+            var n1 = document.getElementById('txtN1').value;
+            var n2 = document.getElementById('txtN2').value;
+            var multi = parseInt(n1) * parseInt(n2);
+            alert("La multiplicacion es: "+multi)
+        }
+    </script>
+<script>
+        function Dividir() {
+            var n1 = document.getElementById('txtN1').value;
+            var n2 = document.getElementById('txtN2').value;
+            var divi = parseInt(n1) / parseInt(n2);
+            alert("La division es: "+divi)
+        }
+    </script>
+</html>
